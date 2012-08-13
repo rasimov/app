@@ -37,7 +37,8 @@ require dirname(__DIR__) . '/config/bootstrap.php';
  * @see lithium\action\Dispatcher
  * @see lithium\net\http\Router
  * @see lithium\action\Controller
- */
+  */
+session_start();
 echo lithium\action\Dispatcher::run(new lithium\action\Request());
 
 ?>
