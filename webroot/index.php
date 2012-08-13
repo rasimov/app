@@ -38,6 +38,7 @@ require dirname(__DIR__) . '/config/bootstrap.php';
  * @see lithium\net\http\Router
  * @see lithium\action\Controller
  */
+ echo 'HELLO WORLD'; die();
 echo lithium\action\Dispatcher::run(new lithium\action\Request());
 
 ?>
