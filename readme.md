@@ -1,1 +1,0 @@
-midnight test application
