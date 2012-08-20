@@ -12,13 +12,16 @@
  * The default name is based on the lithium app path. Remember, if your app is numeric or has
  * special characters you might want to use Inflector::slug() or set this manually.
  */
-use lithium\storage\Session;
 
-$name = basename(LITHIUM_APP_PATH);
-Session::config(array(
-	// 'cookie' => array('adapter' => 'Cookie', 'name' => $name),
-	'default' => array('adapter' => 'Php', 'session.name' => $name)
-));
+
+use lithium\storage\Session;
+use lithium\security\Auth;
+
+//$name = basename(LITHIUM_APP_PATH);
+//Session::config(array(
+//	// 'cookie' => array('adapter' => 'Cookie', 'name' => $name),
+//	'default' => array('adapter' => 'Php', 'session.name' => $name)
+//));
 
 /**
  * Uncomment the lines below to enable forms-based authentication. This configuration will attempt
@@ -38,13 +41,13 @@ Session::config(array(
  * @see lithium\action\Request::$data
  * @see lithium\security\Auth
  */
-// use lithium\security\Auth;
 
+//
 // Auth::config(array(
 // 	'default' => array(
 // 		'adapter' => 'Form',
 // 		'model' => 'Users',
-// 		'fields' => array('username', 'password')
+// 		'fields' => array('Name', 'Password')
 // 	)
 // ));
 
