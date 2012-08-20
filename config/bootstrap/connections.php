@@ -65,7 +65,7 @@ use lithium\data\Connections;
  	'host' => 'localhost',
  	'login' => 'root',
  	'password' => '',
- 	'database' => 'midnight',
+ 	'database' => 'lithiumtestdb',
  	'encoding' => 'UTF-8'
  ));
 
