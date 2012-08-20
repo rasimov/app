@@ -58,14 +58,14 @@ use lithium\data\Connections;
 
 /**
  * Uncomment this configuration to use MySQL as your default database.
- */
+*/ 
  Connections::add('default', array(
  	'type' => 'database',
  	'adapter' => 'MySql',
  	'host' => 'localhost',
  	'login' => 'root',
  	'password' => '',
- 	'database' => 'midnight',
+ 	'database' => 'midtest',
  	'encoding' => 'UTF-8'
  ));
 

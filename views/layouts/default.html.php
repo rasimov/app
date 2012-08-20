@@ -10,7 +10,7 @@
 <html>
 <head>
 	<?php echo $this->html->charset();?>
-	<title>Application &gt; <?php echo $this->title(); ?></title>
+	<title> <?php echo $this->title(); ?> &gt; <?php echo $this->request()->action; ?> </title>
 	<?php echo $this->html->style(array('debug', 'lithium')); ?>
 	<?php echo $this->scripts(); ?>
 	<?php echo $this->html->link('Icon', null, array('type' => 'icon')); ?>
@@ -18,14 +18,11 @@
 <body class="app">
 	<div id="container">
 		<div id="header">
-			<h1>Application</h1>
-			<h2>
-				Powered by <?php echo $this->html->link('Lithium', 'http://lithify.me/'); ?>.
-			</h2>
+			<h1>Midnight Oil Test Application</h1>
 		</div>
 		<div id="content">
 			<?php echo $this->content(); ?>
-		</div>
+		</div>           
 	</div>
 </body>
 </html>
