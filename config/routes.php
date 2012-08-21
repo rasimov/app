@@ -27,7 +27,7 @@ use lithium\core\Environment;
  *
  * @see app\controllers\PagesController
  */
-Router::connect('/', 'Pages::view');
+//Router::connect('/', 'Pages::view');
 
 /**
  * Connect the rest of `PagesController`'s URLs. This will route URLs like `/pages/about` to
@@ -45,6 +45,12 @@ if (!Environment::is('production')) {
 	Router::connect('/test/{:args}', array('controller' => 'lithium\test\Controller'));
 	Router::connect('/test', array('controller' => 'lithium\test\Controller'));
 }
+
+Router::connect('/login', 'Sessions::add');
+Router::connect('/logout', 'Sessions::delete');
+Router::connect('/', 'User::index');
+
+
 
 /**
  * ### Database object routes

@@ -42,12 +42,12 @@ use lithium\security\Auth;
  * @see lithium\security\Auth
  */
 
-//
+
 // Auth::config(array(
 // 	'default' => array(
 // 		'adapter' => 'Form',
 // 		'model' => 'Users',
-// 		'fields' => array('Name', 'Password')
+// 		'fields' => array('username', 'password')
 // 	)
 // ));
 
@@ -56,7 +56,9 @@ Session::config(array(
 ));
 
 Auth::config(array(
-    'default' => array('adapter' => 'Form')
+    'default' => array('adapter' => 'Form',
+        'fields' => array('username', 'password'),
+        'validators' => array('password' => false))
 ));
 
 ?>

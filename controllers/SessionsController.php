@@ -15,11 +15,25 @@ namespace app\controllers;
 
 use lithium\security\Auth;
 class SessionsController extends \lithium\action\Controller{
-        public function add() {
-        if ($this->request->data && Auth::check('default', $this->request)) {
+    
+    
+    public function add() {
+        if (Auth::check('default', $this->request)) {
+            
+            $message = '';
             return $this->redirect('/');
         }
-        // Handle failed authentication attempts
+       // return $this->redirect('/');
+      if ($this->request->data){
+        return array('message' => 'Customer with specified Login and Password didn\'t found');
+      }
+      
+    }
+    
+    public function delete() {
+        
+        Auth::clear('default');
+        return $this->redirect('/');
     }
 }
 
