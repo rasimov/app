@@ -1,0 +1,92 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko" lang="ko">
+<head>
+<title>templates</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://app.continual.ly/css/embed/continually-embed.latest.min.css"/>
+</head>
+<style>
+ .div_button{display:inline-block;width:100px;height:100px;border:1px solid black;cursor:pointer;} 
+ #templates_buttons{display:none;}
+ #modal{display:none;height:400px;border:1px solid red;position:absolute;width:95%;height:95%;top:2.5%;left:2.5%;background-color:#fff;}
+ #continually-button * {pointer-events: none;}
+ #continually-message-container * {pointer-events: none;}
+</style>
+<body>
+<div id="templates_buttons">
+  <div class="div_button" data-template-id="m6wkymq3ye28">Newsletter Sign up (format -  message)</div>
+  <div class="div_button" data-template-id="pg4xrge2rn3z">Webinar Promotion (format -  message)</div>
+  <div class="div_button" data-template-id="n43krz7vyj6q">Start from scratch (format -  button)</div>
+
+  <div id="modal">
+     <button id="close_modal">Close modal</button>
+  </div>
+</div>
+
+     <div id="continually-button-container" data-role="custom_container" data-cxvisible="false">
+         <div id="continually-button" data-role="custom_button" data-continually-conversation-id="-" data-cxvisible="false" class="continually">
+             <div id="continually-button-icon" data-cxvisible="false">
+                 <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48c3ZnIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjIycHgiIHZpZXdCb3g9IjAgMCAyNCAyMiIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4gICAgICAgIDx0aXRsZT5idWJibGVzPC90aXRsZT4gICAgPGRlc2M+Q3JlYXRlZCB3aXRoIFNrZXRjaC48L2Rlc2M+ICAgIDxkZWZzPjwvZGVmcz4gICAgPGcgaWQ9IlBhZ2UtMSIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+ICAgICAgICA8ZyBpZD0iYnViYmxlcyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMC4wMDAwMDAsIC0xLjAwMDAwMCkiIGZpbGw9IiNGRkZGRkYiIGZpbGwtcnVsZT0ibm9uemVybyI+ICAgICAgICAgICAgPHBhdGggZD0iTTEwLDEuMzMzMzMzMzMgQzE1LjUyMjY2NjcsMS4zMzMzMzMzMyAyMCw0Ljk1NiAyMCw5LjQyNTMzMzMzIEMyMCwxMy44OTQ2NjY3IDE1LjUyMjY2NjcsMTcuNTE3MzMzMyAxMCwxNy41MTczMzMzIEM5LjQ2OTMzMzMzLDE3LjUxNzMzMzMgOC45NDkzMzMzMywxNy40ODQgOC40NDEzMzMzMywxNy40MTg2NjY3IEM2LjI5MzMzMzMzLDE5LjU1ODY2NjcgMy44MTMzMzMzMywxOS45NDEzMzMzIDEuMzMzMzMzMzMsMTkuOTk4NjY2NyBMMS4zMzMzMzMzMywxOS40NzQ2NjY3IEMyLjY3MiwxOC44MjEzMzMzIDMuNzUwNjY2NjcsMTcuNjMyIDMuNzUwNjY2NjcsMTYuMjcyIEMzLjc1MDY2NjY3LDE2LjA4MjY2NjcgMy43MzYsMTUuODk2IDMuNzA4LDE1LjcxMzMzMzMgQzEuNDQ2NjY2NjcsMTQuMjI5MzMzMyAtMS4zMzIyNjc2M2UtMTUsMTEuOTY0IC0xLjMzMjI2NzYzZS0xNSw5LjQyNCBDLTEuMzMyMjY3NjNlLTE1LDQuOTU0NjY2NjcgNC40NzczMzMzMywxLjMzMiAxMCwxLjMzMiBMMTAsMS4zMzMzMzMzMyBaIE0yMC43NTA2NjY3LDE5LjQ3MiBDMjAuNzUwNjY2NywyMC42MzczMzMzIDIxLjUwNjY2NjcsMjEuNjU3MzMzMyAyMi42NjgsMjIuMjE3MzMzMyBMMjIuNjY4LDIyLjY2NjY2NjcgQzIwLjUyLDIyLjYxODY2NjcgMTguNTQ4LDIyLjI4OTMzMzMgMTYuNjg1MzMzMywyMC40NTYgQzE2LjI0NTMzMzMsMjAuNTEwNjY2NyAxNS43OTMzMzMzLDIwLjU0IDE1LjMzNDY2NjcsMjAuNTQgQzEzLjM0NTMzMzMsMjAuNTQgMTEuNTEzMzMzMywyMC4wMDQgMTAuMDUwNjY2NywxOS4xMDEzMzMzIEMxMy4wNjUzMzMzLDE5LjA5MDY2NjcgMTUuOTEwNjY2NywxOC4xMjUzMzMzIDE4LjA2OCwxNi4zNzg2NjY3IEMxOS4xNTYsMTUuNDk4NjY2NyAyMC4wMTMzMzMzLDE0LjQ2NTMzMzMgMjAuNjE4NjY2NywxMy4zMDkzMzMzIEMyMS4yNiwxMi4wODI2NjY3IDIxLjU4NCwxMC43NzYgMjEuNTg0LDkuNDI1MzMzMzMgQzIxLjU4NCw5LjIwOCAyMS41NzQ2NjY3LDguOTkwNjY2NjcgMjEuNTU3MzMzMyw4Ljc3NiBDMjMuMDY5MzMzMywxMC4wMjQgMjQsMTEuNzI2NjY2NyAyNCwxMy42MDI2NjY3IEMyNCwxNS43OCAyMi43NDY2NjY3LDE3LjcyMTMzMzMgMjAuNzg2NjY2NywxOC45OTMzMzMzIEMyMC43NjI2NjY3LDE5LjE0OTMzMzMgMjAuNzUwNjY2NywxOS4zMDkzMzMzIDIwLjc1MDY2NjcsMTkuNDcyIFoiIGlkPSJTaGFwZSI+PC9wYXRoPiAgICAgICAgPC9nPiAgICA8L2c+PC9zdmc+" alt=""/>
+             </div>
+             <div id="continually-button-text" data-cxvisible="false"></div>
+         </div>
+         <div id="continually-message-container" data-role="custom_message" data-continually-conversation-id="-" data-cxvisible="false" class="continually" style="width: 400px;height: 100px;">
+             <div id="continually-message-bubble">
+                 <div id="continually-message-text" data-role="custom_message_text"></div>
+                 <div id="close-continually-message-button"><img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIiIGhlaWdodD0iMTIiIHZpZXdCb3g9IjAgMCAxMiAxMiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48dGl0bGU+Y3Jvc3MyPC90aXRsZT48cGF0aCBkPSJNMTEuOTU3IDEuNDU3TDEwLjU0My4wNDMgNiA0LjU4NiAxLjQ1Ny4wNDMuMDQzIDEuNDU3IDQuNTg2IDYgLjA0MyAxMC41NDNsMS40MTQgMS40MTRMNiA3LjQxNGw0LjU0MyA0LjU0MyAxLjQxNC0xLjQxNEw3LjQxNCA2IiBmaWxsLXJ1bGU9Im5vbnplcm8iIGZpbGw9IiNGRkYiLz48L3N2Zz4=" alt="Close" /></div>
+             </div>
+             <div id="continually-message-avatar" class="cx-avatar" data-role="custom_message_avatar"></div>
+         </div>
+         <div id="continually-powered-by" data-cxvisible="false"><a href="http://continual.ly" id="continually-powered-by-link" target="_blank"><span id="continually-powered-by__emoji">🚀</span> by <span id="continually-company-name">Continually</span></a></div>
+     </div>
+
+<script>
+var templatesConfigurationData = null;
+
+var templatesAppId = 'p7qynep6r4vn';
+
+ $.ajax({
+    url: 'https://app.continual.ly/templates-configuration-data',
+    success: function(response){
+        templatesConfigurationData = response;
+        $('#templates_buttons').show();
+    }
+ });
+
+ $('#close_modal').on('click', function(){
+   $('#modal').hide();
+ });
+
+ $('.div_button').on('click', function(){
+    $('div[data-role=custom_container]').attr('data-cxvisible', 'false');
+    $('div[data-role=custom_container] *').attr('data-cxvisible', 'false');
+
+    $('#modal').show();
+    var templateConfig = templatesConfigurationData[$(this).data('template-id')];
+    console.log(templateConfig);
+    if (templateConfig.config.fr === 'msg') {
+	$('div[data-role=custom_message_text]').html(templateConfig.config.mt || templateConfig.sp.text);
+	$('div[data-role=custom_message_avatar]').html('<img src="' + templateConfig.config.owner_avatar + '"/>');
+        $('div[data-role=custom_message]').attr('data-cxvisible', 'true');
+        $('div[data-role=custom_message] *').attr('data-cxvisible', 'true');
+
+        $('div[data-role=custom_message]').attr('data-continually-conversation-id', templateConfig.id);
+        $('div[data-role=custom_message]').attr('data-continually-app-id', templatesAppId);
+    } else {
+        $('div[data-role=custom_button]').attr('data-cxvisible', 'true');
+        $('div[data-role=custom_button] *').attr('data-cxvisible', 'true');
+        $('div[data-role=custom_button]').attr('data-continually-conversation-id', templateConfig.id);
+        $('div[data-role=custom_button]').attr('data-continually-app-id', templatesAppId);
+    }
+    $('div[data-role=custom_container]').attr('data-cxvisible', 'true');
+ });
+</script>
+
+<script>
+var continuallySettings = { appID: 'pne9y62yzkg2' }; 
+</script>
+<script src="https://app.continual.ly/js/embed/continually-embed.latest.min.js"></script>
+</body>
+</html>
